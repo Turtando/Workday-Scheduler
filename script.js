@@ -1,8 +1,11 @@
 // View Functions as "Past" "Present" "Future"
 
 // Global Var
-// var liveClock = $("#live-clock");
+// Date function
+var date = moment().format('MMMM Do YYYY');
+document.getElementById("live-date").innerHTML = date;
 
+// Time function
 function startTime() {
     var today = new Date();
     var h = today.getHours();
