@@ -131,9 +131,26 @@ function checkTime(i) {
 }
 
 //Saving Function
-var input = document.getElementById("textarea").value;
-localStorage.setItem("text", input);
 
-// Retrieve function
-document.getElementById("textarea").value = localStorage.getItem("text")
+var arrInput = JSON.parse(localStorage.getItem("text")) || []
+$(".saveBtn").on("click", function(){
+var input = $(this).siblings("textarea").val()
+var time = $(this).siblings("section").html()
+arrInput.push({
+        notes: input,
+        time: time
+    })
+localStorage.setItem("text", JSON.stringify(arrInput));
+})
+// this for loop will allow us to loop through the timeslots and fill the according time 
+// block with its notes.
+for (var i = 0; i < arrInput.length; i++) {
+    var notes = arrInput[i].notes;
+    var time = arrInput[i].time;
+    $("section").each(function(){
+        if ($(this).html() == time){
+            $(this).siblings("textarea").html(notes)
+        }
+    })
+} 
 
