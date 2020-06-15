@@ -1,4 +1,4 @@
-// Global Vars
+// Global Vars for hours
 var hour1 = document.getElementById("hour1");
 var hour2 = document.getElementById("hour2");
 var hour3 = document.getElementById("hour3");
@@ -20,7 +20,7 @@ const timeSlots = [
 
 // testing values
 console.log(timeSlots[0].value)
-console.log(timeSlots[8].value)
+
 
 // Function for present time in momentJs
 let currentHour = parseInt(moment().format('H'));
@@ -40,9 +40,9 @@ function setColor(){
         document.getElementById("hour1").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[0].value) {
         document.getElementById("hour1").style.backgroundColor = "red"
-    } else  
+    } else (currentHour < timeSlots[0].value) 
         document.getElementById("hour1").style.backgroundColor = "green"
-    }
+     
 
     if (currentHour > timeSlots[1].value) {
         document.getElementById("hour2").style.backgroundColor = "grey"
@@ -103,10 +103,10 @@ function setColor(){
     if (currentHour > timeSlots[8].value) {
         document.getElementById("hour9").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[8].value) {
-        document.getElementById("hour7").style.backgroundColor = "red"
+        document.getElementById("hour9").style.backgroundColor = "red"
     } else (currentHour < timeSlots[8].value) 
-        document.getElementById("hour7").style.backgroundColor = "green"
-    
+        document.getElementById("hour9").style.backgroundColor = "green"
+}
 
 setColor();
 
