@@ -131,8 +131,8 @@ function checkTime(i) {
 }
 
 //Saving Function
-function save() {
-    var fieldValue = document.getElementById("").value;
+
+    localStorage.setItem("text", JSON.stringify(textarea));
     document.getElementById("hour1").value;
     document.getElementById("hour2").value;
     document.getElementById("hour3").value;
@@ -142,6 +142,6 @@ function save() {
     document.getElementById("hour7").value;
     document.getElementById("hour8").value;
     document.getElementById("hour9").value;
-    localStorage.setItem("text", fieldValue);
-}
-document.getElementById("hour").value = localStorage.getItem("textarea");
+    var fieldValue = document.getElementById("").value;
+
+document.getElementById("textarea").val() = localStorage.getItem("textarea");
