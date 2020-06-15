@@ -131,17 +131,9 @@ function checkTime(i) {
 }
 
 //Saving Function
+var input = document.getElementById("textarea").value;
+localStorage.setItem("text", input);
 
-    localStorage.setItem("text", JSON.stringify(textarea));
-    document.getElementById("hour1").value;
-    document.getElementById("hour2").value;
-    document.getElementById("hour3").value;
-    document.getElementById("hour4").value;
-    document.getElementById("hour5").value;
-    document.getElementById("hour6").value;
-    document.getElementById("hour7").value;
-    document.getElementById("hour8").value;
-    document.getElementById("hour9").value;
-    var fieldValue = document.getElementById("").value;
+// Retrieve function
+document.getElementById("textarea").value = localStorage.getItem("text")
 
-document.getElementById("textarea").val() = localStorage.getItem("textarea");
