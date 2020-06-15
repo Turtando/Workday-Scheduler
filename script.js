@@ -114,9 +114,6 @@ console.log(currentHour)
 console.log(timeSlots)
 
 
-
-
-
 // Clock Function
 function startTime() {
     var today = new Date();
@@ -134,3 +131,9 @@ function checkTime(i) {
     return i;
 }
 
+//Saving Function
+function save(){
+    var fieldValue = document.getElementById("textarea").value;
+    localStorage.setItem("text", fieldValue);
+}
+document.getElementById("textarea").value = localStorage.getItem("textarea");
