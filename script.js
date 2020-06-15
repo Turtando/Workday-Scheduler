@@ -19,12 +19,12 @@ const timeSlots = [
 
 
 // testing values
-console.log(timeSlots[0].value)
-
+console.log(timeSlots[3].value)
+console.log(timeSlots)
 
 // Function for present time in momentJs
 let currentHour = parseInt(moment().format('H'));
-
+console.log(currentHour)
 
 // Date function
 var date = moment().format('MMMM Do YYYY');
@@ -34,84 +34,83 @@ console.log(date)
 
 // we will use our array to function as how we color "Past" "Present" "Future"
 // well use the function "setColor"
-function setColor(){
+function setColor() {
 
     if (currentHour > timeSlots[0].value) {
-        document.getElementById("hour1").style.backgroundColor = "grey"
+        document.getElementById("hour1").style.backgroundColor = "grey";
     } else if (currentHour === timeSlots[0].value) {
-        document.getElementById("hour1").style.backgroundColor = "red"
-    } else (currentHour < timeSlots[0].value) 
-        document.getElementById("hour1").style.backgroundColor = "green"
-     
+        document.getElementById("hour1").style.backgroundColor = "red";
+    } else if (currentHour < timeSlots[0].value)
+    document.getElementById("hour1").style.backgroundColor = "green";
+
 
     if (currentHour > timeSlots[1].value) {
         document.getElementById("hour2").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[1].value) {
         document.getElementById("hour2").style.backgroundColor = "red"
-    } else (currentHour < timeSlots[1].value) 
-        document.getElementById("hour2").style.backgroundColor = "green"
-    
+    } else if (currentHour < timeSlots[1].value)
+    document.getElementById("hour2").style.backgroundColor = "green"
+
 
     if (currentHour > timeSlots[2].value) {
         document.getElementById("hour3").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[2].value) {
         document.getElementById("hour3").style.backgroundColor = "red"
-    } else (currentHour < timeSlots[2].value) 
-        document.getElementById("hour3").style.backgroundColor = "green"
-    
+    } else if (currentHour < timeSlots[2].value)
+    document.getElementById("hour3").style.backgroundColor = "green"
+
 
     if (currentHour > timeSlots[3].value) {
         document.getElementById("hour4").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[3].value) {
         document.getElementById("hour4").style.backgroundColor = "red"
-    } else  (currentHour < timeSlots[3].value) 
-        document.getElementById("hour4").style.backgroundColor = "green"
-    
+    } else if (currentHour < timeSlots[3].value)
+    document.getElementById("hour4").style.backgroundColor = "green"
+
 
     if (currentHour > timeSlots[4].value) {
         document.getElementById("hour5").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[4].value) {
         document.getElementById("hour5").style.backgroundColor = "red"
-    } else (currentHour < timeSlots[4].value) 
-        document.getElementById("hour5").style.backgroundColor = "green"
-    
+    } else if (currentHour < timeSlots[4].value)
+    document.getElementById("hour5").style.backgroundColor = "green"
+
 
     if (currentHour > timeSlots[5].value) {
         document.getElementById("hour6").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[5].value) {
         document.getElementById("hour6").style.backgroundColor = "red"
-    } else (currentHour < timeSlots[5].value) 
-        document.getElementById("hour6").style.backgroundColor = "green"
-    
+    } else if (currentHour < timeSlots[5].value)
+    document.getElementById("hour6").style.backgroundColor = "green"
+
 
     if (currentHour > timeSlots[6].value) {
         document.getElementById("hour7").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[6].value) {
         document.getElementById("hour7").style.backgroundColor = "red"
-    } else (currentHour < timeSlots[6].value) 
-        document.getElementById("hour7").style.backgroundColor = "green"
-    
+    } else if (currentHour < timeSlots[6].value)
+    document.getElementById("hour7").style.backgroundColor = "green"
+
 
     if (currentHour > timeSlots[7].value) {
         document.getElementById("hour8").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[7].value) {
         document.getElementById("hour8").style.backgroundColor = "red"
-    } else (currentHour < timeSlots[7].value)
-        document.getElementById("hour8").style.backgroundColor = "green"
-    
+    } else if (currentHour < timeSlots[7].value)
+    document.getElementById("hour8").style.backgroundColor = "green"
+
 
     if (currentHour > timeSlots[8].value) {
         document.getElementById("hour9").style.backgroundColor = "grey"
     } else if (currentHour === timeSlots[8].value) {
         document.getElementById("hour9").style.backgroundColor = "red"
-    } else (currentHour < timeSlots[8].value) 
-        document.getElementById("hour9").style.backgroundColor = "green"
+    } else if (currentHour < timeSlots[8].value)
+    document.getElementById("hour9").style.backgroundColor = "green"
 }
 
 setColor();
 
-console.log(currentHour)
-console.log(timeSlots)
+
 
 
 // Clock Function
@@ -132,8 +131,17 @@ function checkTime(i) {
 }
 
 //Saving Function
-function save(){
-    var fieldValue = document.getElementById("textarea").value;
+function save() {
+    var fieldValue = document.getElementById("").value;
+    document.getElementById("hour1").value;
+    document.getElementById("hour2").value;
+    document.getElementById("hour3").value;
+    document.getElementById("hour4").value;
+    document.getElementById("hour5").value;
+    document.getElementById("hour6").value;
+    document.getElementById("hour7").value;
+    document.getElementById("hour8").value;
+    document.getElementById("hour9").value;
     localStorage.setItem("text", fieldValue);
 }
-document.getElementById("textarea").value = localStorage.getItem("textarea");
+document.getElementById("hour").value = localStorage.getItem("textarea");
