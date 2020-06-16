@@ -10,8 +10,7 @@ Thank you,
 Chris Turton
 
 Below are some live examples of this application:
-![](workdayschedule.gif)
-![](workdayschedule2.gif)
+![](workdayschedulerdemo.gif) ![](workdayschedulerdemo2.gif)
 
 
 https://turtando.github.io/Workday-Scheduler
