@@ -10,7 +10,7 @@ Thank you,
 Chris Turton
 
 Below are some live examples of this application:
-![](./assets/workdayschedulerdemo.gif) ![](./assets/workdayschedulerdemo2.gif)
+![](./Assets/workdayschedulerdemo.gif) ![](./Assets/workdayschedulerdemo2.gif)
 
 
 https://turtando.github.io/Workday-Scheduler
