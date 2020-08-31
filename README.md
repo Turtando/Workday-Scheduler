@@ -24,6 +24,8 @@ This application has a functioning 24-hour clock/calendar running as long as the
 # Usage
 
 As for the functionality of storage, the user has the ability to keep the notes that he or she has written as long as they select the "save button icon" on the right hand of their input. If they are to refresh the page, the content will auto-fill accordingly to what they wrote and its respected time-slot.
+Below are some live examples of this application:
+![](./Assets/workdayschedulerdemo.gif) ![](./Assets/workdayschedulerdemo2.gif)
 
 
 # License
